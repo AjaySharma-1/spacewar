@@ -8,88 +8,6 @@ SPEED= 10
 screen = pygame.display.set_mode((WEIDTH, HEIGHT))
 enemycount= 0
 scale= 1
-<<<<<<< HEAD
-=======
-
-# class StateManager:
-#     def __init__(self):
-#         global running
-#         self.state= "ready"
-        
-        
-#     def mainloop(self ):
-#         global enemycount
-        
-#         for event in pygame.event.get():
-#             if event.type == pygame.QUIT:
-#                 pygame.quit()
-
-        
-             
-#         screen.fill(bgCol)
-#         if enemycount == 50:
-#             for i in range(3):
-#                 enemy = Enemy()
-#                 enemyGroup.add(enemy)
-#                 enemycount = 0
-#         enemycount+=1   
-#         bulletGroup.draw(screen)
-#         playerGroup.draw(screen)
-#         playerGroup.update()
-#         bulletGroup.update()
-#         enemyGroup.update()
-#         enemybulletGroup.draw(screen)
-#         enemyGroup.draw(screen)
-
-#         enemybulletGroup.update()
-#         pygame.display.update()
-#     def readyloop( self):
-#         for event in pygame.event.get():
-#             if event.type == pygame.QUIT:
-#                 pygame.quit()
-
-#             if event.type == pygame.KEYDOWN:
-#                 self.state= "main"
-                
-        
-             
-#         screen.fill(bgCol)
-#         pygame.display.update()
-#     def playAgainloop(self ):
-#         for event in pygame.event.get():
-#             if event.type == pygame.QUIT:
-#                 pygame.quit()
-
-#             if event.type == pygame.KEYDOWN:
-#                 if event.key == pygame.K_SPACE:
-#                     self.state= "main"
-                    
-        
-             
-#         screen.fill(bgCol)
-#         pygame.display.update()
-
-
-#     def manage(self):
-        
-#         if self.state== "ready":
-#             self.readyloop()
-
-#         if self.state== "main":
-#             self.mainloop()
-
-#         if self.state== "playagain":
-            
-            
-            
-
-#             self.playAgainloop()
-
-
-
-
-
->>>>>>> 866572ea96f52d5b026a453a180734da935f9832
 
 
         
@@ -222,11 +140,6 @@ class Bullet(pygame.sprite.Sprite):
             self.kill()
 
 
-<<<<<<< HEAD
-=======
-        
-# managestate = StateManager()
->>>>>>> 866572ea96f52d5b026a453a180734da935f9832
 player= Player("spaceship.png")
 pygame.mouse.set_visible(False)
 playerGroup= pygame.sprite.Group()
@@ -238,12 +151,7 @@ enemybulletGroup= pygame.sprite.Group()
 clock = pygame.time.Clock()
 running = True 
 while running:
-<<<<<<< HEAD
     
-=======
-    # managestate.manage()
-    # managestate.mainloop() 
->>>>>>> 866572ea96f52d5b026a453a180734da935f9832
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running= False
@@ -270,4 +178,3 @@ while running:
     clock.tick(60)
 
     
-
