@@ -1,6 +1,7 @@
 import pygame ,random
 pygame.init()
 bgCol= (0,0,0)
+enemycol= (98,90,77)
 HEIGHT= 800
 WEIDTH = 800
 SPEED= 10
